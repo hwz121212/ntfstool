@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sources\Bitlocker\bek.h" />
+    <ClInclude Include="Sources\Bitlocker\bitlocker.h" />
+    <ClInclude Include="Sources\Bitlocker\decryption.h" />
+    <ClInclude Include="Sources\Bitlocker\fve.h" />
+    <ClInclude Include="Sources\Bitlocker\password.h" />
+    <ClInclude Include="Sources\Bitlocker\recovery.h" />
+    <ClInclude Include="Sources\Commands\commands.h" />
+    <ClInclude Include="Sources\Compression\lznt1.h" />
+    <ClInclude Include="Sources\Compression\ntdll_defs.h" />
+    <ClInclude Include="Sources\Compression\lzx.h" />
+    <ClInclude Include="Sources\Compression\xpress.h" />
+    <ClInclude Include="Sources\Drive\disk.h" />
+    <ClInclude Include="Sources\Drive\mbr_gpt.h" />
+    <ClInclude Include="Sources\Drive\reader.h" />
+    <ClInclude Include="Sources\Drive\smart.h" />
+    <ClInclude Include="Sources\Drive\vbr.h" />
+    <ClInclude Include="Sources\Drive\virtual_disk.h" />
+    <ClInclude Include="Sources\Drive\volume.h" />
+    <ClInclude Include="Sources\EFS\certificate_file.h" />
+    <ClInclude Include="Sources\EFS\export_flags.h" />
+    <ClInclude Include="Sources\EFS\export_flags_enc.h" />
+    <ClInclude Include="Sources\EFS\fek.h" />
+    <ClInclude Include="Sources\EFS\key_file.h" />
+    <ClInclude Include="Sources\EFS\masterkey_file.h" />
+    <ClInclude Include="Sources\EFS\pkcs12_archive.h" />
+    <ClInclude Include="Sources\EFS\private_key.h" />
+    <ClInclude Include="Sources\EFS\private_key_enc.h" />
+    <ClInclude Include="Sources\EFS\public_key.h" />
+    <ClInclude Include="Sources\NTFS\ntfs.h" />
+    <ClInclude Include="Sources\NTFS\ntfs_explorer.h" />
+    <ClInclude Include="Sources\NTFS\ntfs_index_entry.h" />
+    <ClInclude Include="Sources\NTFS\ntfs_mft.h" />
+    <ClInclude Include="Sources\NTFS\ntfs_mft_record.h" />
+    <ClInclude Include="Sources\NTFS\ntfs_reader.h" />
+    <ClInclude Include="Sources\options.h" />
+    <ClInclude Include="Sources\Utils\buffer.h" />
+    <ClInclude Include="Sources\Utils\constant_names.h" />
+    <ClInclude Include="Sources\Utils\crash_handler.h" />
+    <ClInclude Include="Sources\Utils\csv_file.h" />
+    <ClInclude Include="Sources\Utils\formatted_file.h" />
+    <ClInclude Include="Sources\Utils\index_details.h" />
+    <ClInclude Include="Sources\Utils\json_file.h" />
+    <ClInclude Include="Sources\Utils\path_finder.h" />
+    <ClInclude Include="Sources\Utils\progress_bar.h" />
+    <ClInclude Include="Sources\Utils\table.h" />
+    <ClInclude Include="Sources\Utils\btree.h" />
+    <ClInclude Include="Sources\Utils\usn_rules.h" />
+    <ClInclude Include="Sources\Utils\usn_stats.h" />
+    <ClInclude Include="Sources\Utils\utils.h" />
+    <ClInclude Include="Sources\Utils\zone_identifier.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Bitlocker\bek.cpp" />
+    <ClCompile Include="Sources\Bitlocker\bitlocker.cpp" />
+    <ClCompile Include="Sources\Bitlocker\decryption.cpp" />
+    <ClCompile Include="Sources\Bitlocker\password.cpp" />
+    <ClCompile Include="Sources\Bitlocker\recovery.cpp" />
+    <ClCompile Include="Sources\Commands\commands.cpp" />
+    <ClCompile Include="Sources\Commands\command_bitlocker.decrypt.cpp" />
+    <ClCompile Include="Sources\Commands\command_bitlocker.info.cpp" />
+    <ClCompile Include="Sources\Commands\command_mft.btree.cpp" />
+    <ClCompile Include="Sources\Commands\command_efs.backup.cpp" />
+    <ClCompile Include="Sources\Commands\command_efs.certificate.cpp" />
+    <ClCompile Include="Sources\Commands\command_efs.decrypt.cpp" />
+    <ClCompile Include="Sources\Commands\command_efs.key.cpp" />
+    <ClCompile Include="Sources\Commands\command_efs.masterkey.cpp" />
+    <ClCompile Include="Sources\Commands\command_extract.cpp" />
+    <ClCompile Include="Sources\Commands\command_image.cpp" />
+    <ClCompile Include="Sources\Commands\command_logfile.dump.cpp" />
+    <ClCompile Include="Sources\Commands\command_mft.dump.cpp" />
+    <ClCompile Include="Sources\Commands\command_reparse.cpp" />
+    <ClCompile Include="Sources\Commands\command_shadow.cpp" />
+    <ClCompile Include="Sources\Commands\command_shell.cpp" />
+    <ClCompile Include="Sources\Commands\command_bitlocker.fve.cpp" />
+    <ClCompile Include="Sources\Commands\command_mft.record.cpp" />
+    <ClCompile Include="Sources\Commands\command_smart.cpp" />
+    <ClCompile Include="Sources\Commands\command_streams.cpp" />
+    <ClCompile Include="Sources\Commands\command_undelete.cpp" />
+    <ClCompile Include="Sources\Commands\command_usn.analyze.cpp" />
+    <ClCompile Include="Sources\Commands\command_usn.dump.cpp" />
+    <ClCompile Include="Sources\Commands\command_vbr.cpp" />
+    <ClCompile Include="Sources\Commands\command_gpt.cpp" />
+    <ClCompile Include="Sources\Commands\command_help.cpp" />
+    <ClCompile Include="Sources\Commands\command_info.cpp" />
+    <ClCompile Include="Sources\Commands\command_mbr.cpp" />
+    <ClCompile Include="Sources\Compression\lznt1.cpp" />
+    <ClCompile Include="Sources\Compression\lzx.cpp" />
+    <ClCompile Include="Sources\Compression\xpress.cpp" />
+    <ClCompile Include="Sources\Drive\disk.cpp" />
+    <ClCompile Include="Sources\Drive\reader.cpp" />
+    <ClCompile Include="Sources\Drive\virtual_disk.cpp" />
+    <ClCompile Include="Sources\Drive\volume.cpp" />
+    <ClCompile Include="Sources\EFS\certificate_file.cpp" />
+    <ClCompile Include="Sources\EFS\export_flags_enc.cpp" />
+    <ClCompile Include="Sources\EFS\key_file.cpp" />
+    <ClCompile Include="Sources\EFS\masterkey_file.cpp" />
+    <ClCompile Include="Sources\EFS\pkcs12_archive.cpp" />
+    <ClCompile Include="Sources\EFS\private_key.cpp" />
+    <ClCompile Include="Sources\EFS\private_key_enc.cpp" />
+    <ClCompile Include="Sources\EFS\public_key.cpp" />
+    <ClCompile Include="Sources\main.cpp" />
+    <ClCompile Include="Sources\NTFS\ntfs_explorer.cpp" />
+    <ClCompile Include="Sources\NTFS\ntfs_index_entry.cpp" />
+    <ClCompile Include="Sources\NTFS\ntfs_mft.cpp" />
+    <ClCompile Include="Sources\NTFS\ntfs_mft_record.cpp" />
+    <ClCompile Include="Sources\NTFS\ntfs_reader.cpp" />
+    <ClCompile Include="Sources\options.cpp" />
+    <ClCompile Include="Sources\Utils\constant_names.cpp" />
+    <ClCompile Include="Sources\Utils\crash_handler.cpp" />
+    <ClCompile Include="Sources\Utils\csv_file.cpp" />
+    <ClCompile Include="Sources\Utils\index_details.cpp" />
+    <ClCompile Include="Sources\Utils\json_file.cpp" />
+    <ClCompile Include="Sources\Utils\path_finder.cpp" />
+    <ClCompile Include="Sources\Utils\table.cpp" />
+    <ClCompile Include="Sources\Utils\btree.cpp" />
+    <ClCompile Include="Sources\Utils\usn_rules.cpp" />
+    <ClCompile Include="Sources\Utils\utils.cpp" />
+    <ClCompile Include="Sources\Utils\zone_identifier.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Rules\default.json" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{ED7F20A1-18AD-40D1-9CAE-5D613616F2F7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>ntfstool</ProjectName>
+    <VcpkgTriplet Condition="'$(Platform)'=='Win32'">
+    </VcpkgTriplet>
+    <VcpkgTriplet Condition="'$(Platform)'=='x64'">
+    </VcpkgTriplet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <EnableASAN>
+    </EnableASAN>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <EnableASAN>false</EnableASAN>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <SourcePath>Sources</SourcePath>
+    <LinkIncremental />
+    <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+    <EnableMicrosoftCodeAnalysis>true</EnableMicrosoftCodeAnalysis>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <SourcePath>Sources</SourcePath>
+    <LinkIncremental>
+    </LinkIncremental>
+    <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>libeay32.lib;libssleay32.lib;libcppcoro.lib;libdistorm.lib;comsupp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>Sources;$(SolutionDir)thirdparty\openssl-1.1.1q\include;$(SolutionDir)thirdparty\distorm-3.5.2b\include;$(SolutionDir)thirdparty\cppcoro\include;$(SolutionDir)thirdparty\json-3.11.2\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>/await %(AdditionalOptions)</AdditionalOptions>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Sources;$(SolutionDir)thirdparty\openssl-1.1.1q\include;$(SolutionDir)thirdparty\distorm-3.5.2b\include;$(SolutionDir)thirdparty\cppcoro\include;$(SolutionDir)thirdparty\json-3.11.2\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_CONSOLE;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <AdditionalOptions>/await %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MinSpace</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libeay32.lib;libssleay32.lib;libcppcoro.lib;libdistorm.lib;comsupp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

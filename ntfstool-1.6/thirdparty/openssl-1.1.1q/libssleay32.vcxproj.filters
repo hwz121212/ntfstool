@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ssl\bio_ssl.c" />
+    <ClCompile Include="ssl\d1_lib.c" />
+    <ClCompile Include="ssl\d1_srtp.c" />
+    <ClCompile Include="ssl\s3_cbc.c" />
+    <ClCompile Include="ssl\s3_enc.c" />
+    <ClCompile Include="ssl\s3_lib.c" />
+    <ClCompile Include="ssl\ssl_asn1.c" />
+    <ClCompile Include="ssl\ssl_cert.c" />
+    <ClCompile Include="ssl\ssl_ciph.c" />
+    <ClCompile Include="ssl\ssl_err.c" />
+    <ClCompile Include="ssl\ssl_lib.c" />
+    <ClCompile Include="ssl\ssl_rsa.c" />
+    <ClCompile Include="ssl\ssl_sess.c" />
+    <ClCompile Include="ssl\ssl_stat.c" />
+    <ClCompile Include="ssl\ssl_txt.c" />
+    <ClCompile Include="ssl\t1_enc.c" />
+    <ClCompile Include="ssl\t1_lib.c" />
+    <ClCompile Include="ssl\tls_srp.c" />
+    <ClCompile Include="ssl\record\dtls1_bitmap.c">
+      <Filter>record</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\record\rec_layer_d1.c">
+      <Filter>record</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\record\rec_layer_s3.c">
+      <Filter>record</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\record\ssl3_buffer.c">
+      <Filter>record</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\record\ssl3_record.c">
+      <Filter>record</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\record\ssl3_record_tls13.c">
+      <Filter>record</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\statem\extensions.c">
+      <Filter>statem</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\statem\extensions_clnt.c">
+      <Filter>statem</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\statem\extensions_cust.c">
+      <Filter>statem</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\statem\extensions_srvr.c">
+      <Filter>statem</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\statem\statem.c">
+      <Filter>statem</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\statem\statem_clnt.c">
+      <Filter>statem</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\statem\statem_dtls.c">
+      <Filter>statem</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\statem\statem_lib.c">
+      <Filter>statem</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\statem\statem_srvr.c">
+      <Filter>statem</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl\d1_msg.c" />
+    <ClCompile Include="ssl\methods.c" />
+    <ClCompile Include="ssl\packet.c" />
+    <ClCompile Include="ssl\pqueue.c" />
+    <ClCompile Include="ssl\s3_msg.c" />
+    <ClCompile Include="ssl\ssl_conf.c" />
+    <ClCompile Include="ssl\ssl_init.c" />
+    <ClCompile Include="ssl\ssl_mcnf.c" />
+    <ClCompile Include="ssl\ssl_utst.c" />
+    <ClCompile Include="ssl\t1_trce.c" />
+    <ClCompile Include="ssl\tls13_enc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ms\ssleay32.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="record">
+      <UniqueIdentifier>{d3d4f646-4eed-451a-a886-2eb6eddaf3fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="statem">
+      <UniqueIdentifier>{12b678d3-e39c-48d8-8f7f-b13c001ca9e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

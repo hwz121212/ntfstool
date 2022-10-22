@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ntfstool", "thirdparty\ntfstool-1.6\NTFS.vcxproj", "{ED7F20A1-18AD-40D1-9CAE-5D613616F2F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{93300A7D-0A1E-4CA0-BD50-FF4FE3213469}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libeay32", "thirdparty\openssl-1.1.1q\libeay32.vcxproj", "{70ABE75C-FBC2-4C82-9103-B952FA5CD168}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libssleay32", "thirdparty\openssl-1.1.1q\libssleay32.vcxproj", "{24265BD3-3CF3-41A9-B137-53DBEC0F53BF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libdistorm", "thirdparty\distorm-3.5.2b\libdistorm.vcxproj", "{15051CE1-AB10-4239-973D-01B84F2AD0A9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcppcoro", "thirdparty\cppcoro\libcppcoro.vcxproj", "{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED7F20A1-18AD-40D1-9CAE-5D613616F2F7}.Debug|x64.ActiveCfg = Debug|x64
+		{ED7F20A1-18AD-40D1-9CAE-5D613616F2F7}.Debug|x64.Build.0 = Debug|x64
+		{ED7F20A1-18AD-40D1-9CAE-5D613616F2F7}.Release|x64.ActiveCfg = Release|x64
+		{ED7F20A1-18AD-40D1-9CAE-5D613616F2F7}.Release|x64.Build.0 = Release|x64
+		{70ABE75C-FBC2-4C82-9103-B952FA5CD168}.Debug|x64.ActiveCfg = Debug|x64
+		{70ABE75C-FBC2-4C82-9103-B952FA5CD168}.Debug|x64.Build.0 = Debug|x64
+		{70ABE75C-FBC2-4C82-9103-B952FA5CD168}.Release|x64.ActiveCfg = Release|x64
+		{70ABE75C-FBC2-4C82-9103-B952FA5CD168}.Release|x64.Build.0 = Release|x64
+		{24265BD3-3CF3-41A9-B137-53DBEC0F53BF}.Debug|x64.ActiveCfg = Debug|x64
+		{24265BD3-3CF3-41A9-B137-53DBEC0F53BF}.Debug|x64.Build.0 = Debug|x64
+		{24265BD3-3CF3-41A9-B137-53DBEC0F53BF}.Release|x64.ActiveCfg = Release|x64
+		{24265BD3-3CF3-41A9-B137-53DBEC0F53BF}.Release|x64.Build.0 = Release|x64
+		{15051CE1-AB10-4239-973D-01B84F2AD0A9}.Debug|x64.ActiveCfg = Debug|x64
+		{15051CE1-AB10-4239-973D-01B84F2AD0A9}.Debug|x64.Build.0 = Debug|x64
+		{15051CE1-AB10-4239-973D-01B84F2AD0A9}.Release|x64.ActiveCfg = Release|x64
+		{15051CE1-AB10-4239-973D-01B84F2AD0A9}.Release|x64.Build.0 = Release|x64
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}.Debug|x64.ActiveCfg = Debug|x64
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}.Debug|x64.Build.0 = Debug|x64
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}.Release|x64.ActiveCfg = Release|x64
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{70ABE75C-FBC2-4C82-9103-B952FA5CD168} = {93300A7D-0A1E-4CA0-BD50-FF4FE3213469}
+		{24265BD3-3CF3-41A9-B137-53DBEC0F53BF} = {93300A7D-0A1E-4CA0-BD50-FF4FE3213469}
+		{15051CE1-AB10-4239-973D-01B84F2AD0A9} = {93300A7D-0A1E-4CA0-BD50-FF4FE3213469}
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538} = {93300A7D-0A1E-4CA0-BD50-FF4FE3213469}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
+	EndGlobalSection
+EndGlobal
